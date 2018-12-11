@@ -4,7 +4,16 @@ const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const keys = require('./config/keys');
 
+mongoose.connect(keys.mongoURI);
+
 const app = express();
+
+app.use(
+  cookieSession({
+    maxAge: 30 * 24 * 60 * 60 * 1000,
+    keys: [keys.cookieKey]
+  })
+);
 
 // the __dirname is the current directory from where the script is running
 app.use(express.static('./app/public/'));
