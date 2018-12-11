@@ -15,6 +15,7 @@ const Home = () => {
         title="test title"
         description="test description"
         lead="test lead"
+        rounded
       />
     </GridContainer>
   );

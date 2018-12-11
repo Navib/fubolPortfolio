@@ -9,13 +9,18 @@ const defaultProps = {};
 const propTypes = {
   title: PropTypes.string,
   lead: PropTypes.string,
-  description: PropTypes.string
+  description: PropTypes.string,
+  rounded: PropTypes.bool
 };
 
-const Jumbotron = ({ title, lead, description }) => {
+const Jumbotron = ({ title, lead, description, rounded }) => {
   return (
     <GridX>
-      <Cell className={`large-12 ${styles.jumbotronBase}`}>
+      <Cell
+        className={`large-12 ${styles.jumbotronBase} ${
+          rounded ? styles.roundedCorners : null
+        }`}
+      >
         <h1>{title}</h1>
         <p>{lead}</p>
         <hr className={styles.horizontalRule} />

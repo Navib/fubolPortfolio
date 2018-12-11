@@ -3,8 +3,11 @@
 
 .jumbotronBase {
   background: $p4Color;
-  padding: 2rem;
-  border-radius: 4px;
+  padding: 1rem 2rem 2rem;
+}
+
+.roundedCorners {
+  border-radius: 4px
 }
 
 .horizontalRule {
