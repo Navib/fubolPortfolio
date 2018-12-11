@@ -1,0 +1,17 @@
+@import '../../../styles/_variables.scss';
+
+.buttonBase {
+  border: $borderSolidOutline;
+  padding: .5rem 1.4rem;
+  cursor: pointer;
+  transition: all .5s ease 1;
+}
+
+.buttonBase:active, .buttonBase:hover {
+  color: $neutralColor;
+  background: $primaryColor;
+}
+
+.buttonBase:active {
+  transform: translateY(2px);
+}
