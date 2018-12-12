@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import classnames from 'classnames';
-import styles from './Button.scss';
+import React from "react";
+import PropTypes from "prop-types";
+import classnames from "classnames";
+import styles from "./Button.scss";
 
 const defaultProps = {};
 const propTypes = {
@@ -9,16 +9,28 @@ const propTypes = {
   className: PropTypes.any,
   role: PropTypes.any,
   onClick: PropTypes.any,
-  href: PropTypes.any
+  href: PropTypes.any,
+  onMouseLeave: PropTypes.any,
+  onMouseOver: PropTypes.any
 };
 
-const Button = ({ children, className, role, onClick, href }) => {
+const Button = ({
+  children,
+  className,
+  role,
+  onClick,
+  href,
+  onMouseOver,
+  onMouseLeave
+}) => {
   return (
     <button
       className={classnames(styles.buttonBase, className)}
       role={role}
       onClick={onClick}
       href={href}
+      onMouseOver={onMouseOver}
+      onMouseLeave={onMouseLeave}
     >
       {children}
     </button>
