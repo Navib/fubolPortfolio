@@ -10,16 +10,20 @@ const propTypes = {
   title: PropTypes.string,
   lead: PropTypes.string,
   description: PropTypes.string,
-  rounded: PropTypes.bool
+  rounded: PropTypes.bool,
+  className: PropTypes.any
 };
 
-const Jumbotron = ({ title, lead, description, rounded }) => {
+const Jumbotron = ({ title, lead, description, rounded, className }) => {
   return (
     <GridX>
       <Cell
-        className={`large-12 ${styles.jumbotronBase} ${
-          rounded ? styles.roundedCorners : null
-        }`}
+        className={classnames(
+          'large-12',
+          styles.jumbotronBase,
+          rounded ? styles.roundedCorners : null,
+          className
+        )}
       >
         <h1>{title}</h1>
         <p>{lead}</p>

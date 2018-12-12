@@ -1,0 +1,6 @@
+@import './_variables.scss';
+
+:global(.slick-next::before, ),
+:global(.slick-prev::before, ) {
+  color: $primaryColor !important;
+}
