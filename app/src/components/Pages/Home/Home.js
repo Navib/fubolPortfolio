@@ -9,6 +9,7 @@ import SimpleSlider from "../../Common/Slider";
 import Slide from "../../Common/Slider/Slide";
 import Alert from "../../Common/Alert";
 import ListGroup from "../../Common/ListGroup";
+import ListGroupItem from "../../Common/ListGroup/ListGroupItem";
 
 const Home = () => {
   return (
@@ -36,7 +37,11 @@ const Home = () => {
       <Alert variation="success" alertHeading="test alert title">
         Alert
       </Alert>
-      <ListGroup />
+      <ListGroup>
+        <ListGroupItem button>Cras justo odio</ListGroupItem>
+        <ListGroupItem anchor>Dapibus ac facilisis in</ListGroupItem>
+        <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
+      </ListGroup>
     </GridContainer>
   );
 };
