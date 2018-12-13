@@ -9,7 +9,8 @@ import SimpleSlider from "../../Common/Slider";
 import Slide from "../../Common/Slider/Slide";
 import Alert from "../../Common/Alert";
 import ListGroup from "../../Common/ListGroup";
-import ListGroupItem from "../../Common/ListGroup/ListGroupItem";
+import Card from "../../Common/Card";
+import Modal from "../../Common/Modal";
 
 const Home = () => {
   return (
@@ -42,6 +43,8 @@ const Home = () => {
         <ListGroupItem anchor>Dapibus ac facilisis in</ListGroupItem>
         <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
       </ListGroup>
+      <Card />
+      <Modal />
     </GridContainer>
   );
 };
