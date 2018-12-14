@@ -1,11 +1,11 @@
-import React, { Component, Fragment } from 'react';
-import PropTypes from 'prop-types';
-import classnames from 'classnames';
-import Button from '../Button';
-import styles from './Modal.scss';
-import ModalHeader from './ModalHeader';
-import ModalBody from './ModalBody';
-import ModalFooter from './ModalFooter';
+import React, { Component, Fragment } from "react";
+import PropTypes from "prop-types";
+import classnames from "classnames";
+import Button from "../Button";
+import styles from "./Modal.scss";
+import ModalHeader from "./ModalHeader";
+import ModalBody from "./ModalBody";
+import ModalFooter from "./ModalFooter";
 
 const defaultProps = {};
 const propTypes = {
@@ -71,7 +71,7 @@ class Modal extends Component {
             <div className={styles.modalContent}>
               <ModalHeader exitModal={this.exitModal} />
               <ModalBody />
-              <ModalFooter />
+              <ModalFooter exitModal={this.exitModal} />
             </div>
           </div>
         </div>

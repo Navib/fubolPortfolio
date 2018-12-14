@@ -33,14 +33,14 @@
   pointer-events: none;
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
   -webkit-transform: translate(0, -25%);
   transform: translate(0, -25%);
 }
 
-.modalDialogShow {
-  -webkit-transform: translate(0, 0) !important;
-  transform: translate(0, 0) !important;
+.modalDialog.modalDialogShow {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
 .modalContent {
@@ -60,7 +60,6 @@
   border-radius: 0.3rem;
   outline: 0;
 }
-
 @media (min-width: $breakpoint-sm) {
   .modalDialog {
     max-width: 500px;

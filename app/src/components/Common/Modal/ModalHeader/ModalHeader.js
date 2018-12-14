@@ -1,6 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './ModalHeader.scss';
+import React from "react";
+import PropTypes from "prop-types";
+import styles from "./ModalHeader.scss";
+import { IoMdClose } from "react-icons/io";
 
 const defaultProps = {};
 const propTypes = {
@@ -21,7 +22,9 @@ const ModalHeader = ({ children, exitModal }) => {
         aria-label="Close"
         onClick={() => exitModal()}
       >
-        <span aria-hidden="true">x</span>
+        <span aria-hidden="true">
+          <IoMdClose />
+        </span>
       </button>
       <div>{children}</div>
     </div>
