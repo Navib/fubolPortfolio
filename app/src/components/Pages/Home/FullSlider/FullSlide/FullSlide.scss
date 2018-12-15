@@ -1,0 +1,27 @@
+.slideHeight {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-flow: column wrap;
+  padding-top: 2rem;
+  height: 100%;
+}
+
+.headLine {
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-decoration: overline;
+  margin: 0 0 0.2rem;
+  color: #7b8898;
+}
+
+.lead {
+  font-weight: 700;
+  font-size: 2.5rem;
+}

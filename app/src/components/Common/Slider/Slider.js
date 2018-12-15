@@ -32,7 +32,10 @@ const defaultProps = {
   slidesToShow: 1,
   speed: 500,
   lazyLoad: false,
-  dots: true
+  dots: true,
+  sliderTitle: null,
+  appendDots: dots => <ul>{dots}</ul>,
+  customPaging: i => <button>{i + 1}</button>
 };
 const propTypes = {
   className: PropTypes.any,
@@ -67,7 +70,9 @@ const propTypes = {
   slidesToShow: PropTypes.any,
   speed: PropTypes.any,
   swipeToSlide: PropTypes.any,
-  lazyLoad: PropTypes.any
+  lazyLoad: PropTypes.any,
+  appendDots: PropTypes.any,
+  customPaging: PropTypes.any
 };
 
 export default class SimpleSlider extends Component {
@@ -103,11 +108,13 @@ export default class SimpleSlider extends Component {
       rows,
       swipeToSlide,
       variableWidth,
-      lazyLoad
+      lazyLoad,
+      appendDots,
+      customPaging
     } = this.props;
     return (
       <div>
-        <h2>{sliderTitle}</h2>
+        {sliderTitle !== null && <h2>{sliderTitle}</h2>}
         <Slider
           className={className}
           accessibility={accessibility}
@@ -141,6 +148,8 @@ export default class SimpleSlider extends Component {
           touchMove
           useCSS
           useTransform
+          appendDots={appendDots}
+          customPaging={customPaging}
         >
           {children}
         </Slider>

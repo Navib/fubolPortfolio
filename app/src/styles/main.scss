@@ -1,4 +1,20 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700');
 @import './_variables.scss';
+@import './globals.scss';
 @import './_semantic.scss';
 @import './_slick.scss';
+
+html,
+body,
+h1,
+h2,
+h4,
+h4,
+h5,
+h6,
+p,
+a,
+button,
+div {
+  font-family: 'Roboto Slab', serif;
+}

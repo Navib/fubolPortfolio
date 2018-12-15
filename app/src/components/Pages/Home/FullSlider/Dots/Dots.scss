@@ -1,0 +1,82 @@
+.dotList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 0;
+}
+
+.dotList li {
+  margin: 0.1rem auto;
+}
+
+.dotListRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 0;
+  list-style: none;
+  min-width: 55px;
+}
+
+.divisor,
+.divisorLine {
+  display: block !important;
+}
+
+.dotListRow li button {
+  font-size: 1.4rem;
+  position: relative;
+  text-decoration: line-through;
+  color: transparent;
+  cursor: url('/assets/cursor.svg') 25 15, auto;
+}
+
+.dotListRow li {
+  position: relative;
+}
+
+.dotListRow li:before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: #000;
+  top: 45%;
+  transform: translateY(-50%);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.dotListRow li button:before {
+  content: '';
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background: #000;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.dotlistrow li button {
+}
+
+.dotListRow li:last-child button {
+  color: transparent;
+  width: 0;
+}
+
+.dotListRow li button:active,
+.dotListRow li button:focus,
+.dotList li button:active,
+.dotList li button:focus {
+  outline: none;
+}
+
+.dotListRow :global(.slick-active) button:before {
+  background: #e0d5d5;
+}

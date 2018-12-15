@@ -1,19 +1,12 @@
 @import '../../styles/_variables.scss';
 
 .navList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-left: 0;
   margin-bottom: 0;
   list-style: none;
 }
 
-.navItem {}
+.navItem {
+}
 
 .navLink {
   display: block;
@@ -30,12 +23,29 @@
   line-height: inherit;
   white-space: nowrap;
   text-decoration: none;
+  text-align: center;
+  width: 100%;
 }
 
 .navIcon {
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
+}
+
+.headerBorder {
+  border-bottom: 1px solid $primaryColor;
+}
+
+.flexColumn {
+  display: flex;
+  flex-flow: column wrap !important;
+  height: 100vh;
+  justify-content: space-between;
+}
+.navList {
+  padding: 0;
+  text-align: center;
 }
 
 @media (min-width: 992px) {

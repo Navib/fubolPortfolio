@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="206.46902654867256 235.95575221238937 97.87610619469024 97.87610619469041" width="40" height="40">
+  <defs>
+    <path d="M301.35 283.89C301.35 309.8 280.31 330.83 254.41 330.83C228.5 330.83 207.47 309.8 207.47 283.89C207.47 257.99 228.5 236.96 254.41 236.96C280.31 236.96 301.35 257.99 301.35 283.89Z" id="gcGENUtrn"></path>
+  </defs>
+  <g>
+    <g>
+      <use xlink:href="#gcGENUtrn" opacity="0.4" fill="#a08f87" fill-opacity="1"></use>
+    </g>
+  </g>
+</svg>

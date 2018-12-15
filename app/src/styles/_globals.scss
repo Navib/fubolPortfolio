@@ -1,0 +1,7 @@
+:global(.overFlowHidden) {
+  overflow: hidden;
+}
+
+:global(ul .slick-active button) {
+  color: red;
+}
