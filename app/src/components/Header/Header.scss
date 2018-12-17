@@ -43,21 +43,23 @@
   height: 100vh;
   justify-content: space-between;
 }
+
 .navList {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
   padding: 0;
   text-align: center;
 }
 
-@media (min-width: 992px) {
-  .navList {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
+.navLink {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
 
-  .navLink {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+@media (max-width: $breakpoint-lg) {
+  .flexColumn {
+    height: auto;
   }
 }

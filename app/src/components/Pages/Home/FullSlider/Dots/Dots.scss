@@ -62,7 +62,8 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
-.dotlistrow li button {
+.dotlistrow li:last-child:before {
+  display: none;
 }
 
 .dotListRow li:last-child button {
