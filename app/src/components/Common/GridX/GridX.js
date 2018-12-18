@@ -7,12 +7,15 @@ const defaultProps = {};
 const propTypes = {
   className: PropTypes.any,
   children: PropTypes.any,
+  style: PropTypes.any,
   gutters: PropTypes.oneOf(['grid-margin-x', 'grid-padding-x'])
 };
 
-const GridX = ({ className, children, gutters }) => {
+const GridX = ({ className, children, gutters, style }) => {
   return (
-    <div className={classnames('grid-x', className, gutters)}>{children}</div>
+    <div className={classnames('grid-x', className, gutters)} style={style}>
+      {children}
+    </div>
   );
 };
 

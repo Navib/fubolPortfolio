@@ -8,10 +8,10 @@ import Cell from './Common/Cell';
 
 export default ({ children, history }) => {
   return (
-    <GridContainer gridWidth="full">
+    <GridContainer gridWidth="fluid">
       <GridX>
         <Header />
-        <Cell className="large-8">{children}</Cell>
+        <Cell className="large-9 medium-9 small-12">{children}</Cell>
         <Footer />
       </GridX>
     </GridContainer>

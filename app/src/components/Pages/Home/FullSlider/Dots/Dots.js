@@ -9,18 +9,10 @@ const propTypes = {
 };
 
 const Dots = ({ dots, labels }) => {
+  console.log(dots);
   return (
     <React.Fragment>
-      <div
-        style={{
-          padding: '0px 20px 0px 8px',
-          position: 'absolute',
-          left: '50%',
-          transform: 'translateX(-50%)',
-          width: 'auto',
-          bottom: '2.5rem'
-        }}
-      >
+      <div className={styles.listWrapper}>
         <ul style={{ margin: '0px' }} className={styles.dotListRow}>
           {dots}
         </ul>

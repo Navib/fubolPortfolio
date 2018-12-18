@@ -9,6 +9,7 @@ import LinkTo from '../Common/LinkTo';
 import styles from './Header.scss';
 import { IconContext } from 'react-icons';
 import { FaFutbol } from 'react-icons/fa';
+import SlideOut from '../Common/SlideOut';
 
 const defaultProps = {};
 const propTypes = {
@@ -16,45 +17,39 @@ const propTypes = {
   className: PropTypes.any
 };
 
+const Links = () => {
+  return (
+    <ul className={styles.navList}>
+      <li className={styles.navItem}>
+        <LinkTo to="/" className={styles.navLink}>
+          Home
+        </LinkTo>
+      </li>
+      <li className={styles.navItem}>
+        <LinkTo to="/admin" className={styles.navLink}>
+          Admin
+        </LinkTo>
+      </li>
+      <li>
+        <LinkTo to="/demo" className={styles.navLink}>
+          Demo
+        </LinkTo>
+      </li>
+    </ul>
+  );
+};
+
 const Header = ({ children, className }) => {
   return (
-    <header className={(styles.headerBorder, 'cell large-2')}>
+    <header className={(styles.headerBorder, 'cell large-2 medium-2 small-12')}>
       <GridX className={styles.flexColumn}>
+        <Cell>
+          <SlideOut className={styles.navButton}>{Links()}</SlideOut>
+        </Cell>
         <Cell>
           <LinkTo to="/" className={styles.navbarBrand}>
             LMCW
           </LinkTo>
-        </Cell>
-        <Cell>
-          <ul className={styles.navList}>
-            <li className={styles.navItem}>
-              <LinkTo to="/" className={styles.navLink}>
-                Home
-              </LinkTo>
-            </li>
-            <li className={styles.navItem}>
-              <LinkTo to="/admin" className={styles.navLink}>
-                Admin
-              </LinkTo>
-            </li>
-            <li>
-              <LinkTo to="/demo" className={styles.navLink}>
-                Demo
-              </LinkTo>
-            </li>
-          </ul>
-        </Cell>
-        <Cell className={styles.navIcon}>
-          <IconContext.Provider
-            value={{
-              size: '1.5rem',
-              className: 'global-class-name'
-            }}
-          >
-            <div>
-              <FaFutbol />
-            </div>
-          </IconContext.Provider>
         </Cell>
       </GridX>
     </header>

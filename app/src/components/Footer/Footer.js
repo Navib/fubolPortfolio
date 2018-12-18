@@ -13,7 +13,12 @@ const propTypes = {
 
 const Footer = ({ className }) => {
   return (
-    <footer className={classnames(styles.centerFlex, 'cell large-2')}>
+    <footer
+      className={classnames(
+        styles.centerFlex,
+        'cell large-1 medium-1 small-12'
+      )}
+    >
       <IconContext.Provider
         value={{
           size: '2.4rem',
