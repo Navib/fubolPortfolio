@@ -1,0 +1,21 @@
+:global(.slick-prev),
+:global(.slick-next) {
+  z-index: 99;
+  height: 100%;
+  width: 50%;
+}
+
+:global(.slick-next:before),
+:global(.slick-prev:before) {
+  opacity: 0 !important;
+}
+
+:global(.slick-prev) {
+  left: 0;
+  cursor: url('/assets/mouseArrow.svg') 25 15, auto;
+}
+
+:global(.slick-next) {
+  right: 0;
+  cursor: cell;
+}

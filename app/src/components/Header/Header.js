@@ -26,6 +26,11 @@ const Links = () => {
         </LinkTo>
       </li>
       <li className={styles.navItem}>
+        <LinkTo to="/bio" className={styles.navLink}>
+          Bio
+        </LinkTo>
+      </li>
+      <li className={styles.navItem}>
         <LinkTo to="/admin" className={styles.navLink}>
           Admin
         </LinkTo>

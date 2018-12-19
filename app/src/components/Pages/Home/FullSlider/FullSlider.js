@@ -44,6 +44,7 @@ class FullSlider extends Component {
         slidesToShow={1}
         slidesToScroll={1}
         appendDots={dots => this.renderDots(dots, this.props.slides)}
+        vertical
       >
         {this.renderSlides()}
       </SimpleSlider>

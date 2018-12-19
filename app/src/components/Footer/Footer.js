@@ -16,7 +16,7 @@ const Footer = ({ className }) => {
     <footer
       className={classnames(
         styles.centerFlex,
-        'cell large-1 medium-1 small-12'
+        'cell large-2 medium-2 small-12'
       )}
     >
       <IconContext.Provider

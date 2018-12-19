@@ -10,10 +10,12 @@ import { store, history } from './store';
 import './styles/main.scss';
 import './styles/grid.css';
 import './assets/cursor.svg';
+import './assets/mouseArrow.svg';
 
 import App from './components/App';
-import Home from './components/Pages/Home/index';
-import Demo from './components/Pages/Demo/index';
+import Home from './components/Pages/Home';
+import Bio from './components/Pages/Bio';
+import Demo from './components/Pages/Demo';
 
 const Admin = () => {
   return (
@@ -29,8 +31,9 @@ ReactDOM.render(
       <Switch>
         <App>
           <Route exact path="/" component={Home} />
-          <Route exact path="/demo" component={Demo} />
-          <Route exact path="/admin" component={Admin} />
+          <Route path="/bio" component={Bio} />
+          <Route path="/demo" component={Demo} />
+          <Route path="/admin" component={Admin} />
         </App>
       </Switch>
     </Router>

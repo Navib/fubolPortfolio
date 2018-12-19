@@ -11,7 +11,7 @@ export default ({ children, history }) => {
     <GridContainer gridWidth="fluid">
       <GridX>
         <Header />
-        <Cell className="large-9 medium-9 small-12">{children}</Cell>
+        <Cell className="large-8 medium-8 small-12">{children}</Cell>
         <Footer />
       </GridX>
     </GridContainer>
