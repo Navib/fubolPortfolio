@@ -12,10 +12,10 @@
 
 :global(.slick-prev) {
   left: 0;
-  cursor: url('/assets/mouseArrow.svg') 25 15, auto;
+  cursor: url('/assets/mouseArrowLeft.svg') 25 15, auto;
 }
 
 :global(.slick-next) {
   right: 0;
-  cursor: cell;
+  cursor: url('/assets/mouseArrow.svg') 25 15, auto;
 }

@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import SimpleSlider from '../../../Common/Slider';
-import Cell from '../../../Common/Cell';
-import FullSlide from './FullSlide';
-import Dots from './Dots';
-import styles from './FullSlider.scss';
-import newProps from './props';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import SimpleSlider from "../../../Common/Slider";
+import Cell from "../../../Common/Cell";
+import FullSlide from "./FullSlide";
+import Dots from "./Dots";
+import styles from "./FullSlider.scss";
+import newProps from "./props";
 
 const defaultProps = {
   slides: newProps.slides
@@ -40,7 +40,7 @@ class FullSlider extends Component {
       <SimpleSlider
         dots={true}
         infinite={false}
-        speed={500}
+        speed={1000}
         slidesToShow={1}
         slidesToScroll={1}
         appendDots={dots => this.renderDots(dots, this.props.slides)}
